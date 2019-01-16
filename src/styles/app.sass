@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700')
+
+//$--color-primary: #1c11e7
+$--border-color-base: #8e8e8e
+
+//$--border-color-lighter: #606266
+$--border-color-lighter: #8e8e8e
+
+$--table-header-color: #000
+
+//$--table-header-color: #8e8e8e
+$--font-path: '../../node_modules/element-ui/packages/theme-chalk/src/fonts'
+
+@import '../../node_modules/element-ui/packages/theme-chalk/src/index.scss'
+
+body
+    //background-color: #FAFBFC
+    font-family: 'Roboto', sans-serif
+    margin: 0
+
+    .header-background thead tr th
+        background: #C8C8C8
+    .header-background .el-table__expanded-cell
+        padding: 10px
+
+div.homeTable
+  border: 1px solid $--border-color-lighter
+
+  .cell
+    padding: 0 !important
+
+div.homeTable th, div.homeTable td
+  border-bottom: 1px solid $--border-color-lighter
+  border-right: 1px solid $--border-color-lighter
+
+div.homeTable a
+  color: $--color-primary
+  text-decoration: underline
+div.homePage
+    position: relative
+div.homePage a:hover
+  text-decoration: none
+
+div.homePage .el-table
+  font-size: 12px
+
+div.homeDateInput
+  float: left
+  margin: 0 40px 40px 0
+
+div.homePrintButton:after
+    content: ''
+    clear: both
+    width: auto
+
+div.homePrintButton
+  float: right
+  background: #f5f7fa
+  color: #fff
+  border-radius: 5px
+  border: 1px solid $--border-color-lighter
+
+div.homePrintButton:hover
+  background: $--color-primary
+  border: none
+
+div.homePrintButton a
+  color: $--color-primary
+  padding: 10px 25px
+  display: block
+  text-decoration: none
+
+div.homePrintButton:hover a
+  color: #fff
+
+th.rotate
+  height: 250px
+  width: 30px
+  position: relative
+
+th.rotate div
+  line-height: 12px !important
+  width: 250px
+  position: absolute
+  -webkit-transform: rotate(90deg)
+  -moz-transform: rotate(90deg)
+  -ms-transform: rotate(90deg)
+  -o-transform: rotate(90deg)
+  transform: rotate(90deg)
+  left: -110px
+
+span.clientNameWords
+  display: block
+  //width: 19px
+  //height: 15px
+  position: absolute
+
+div.pageList
+  margin: 20px
+
+button.orderButton
+  float: left
+div.cell
+  padding-top: 4px
+  padding-bottom: 4px
+
+  button.el-button:nth-child(2)
+    margin-right: 10px
+a.orderPrintButton
+  background: #fff
+  color: $--color-primary
+  padding: 7px 15px
+  border-radius: 3px
+  border: 1px solid $--border-color-lighter
+  font-size: 12px
+  margin-left: 10px
+  text-decoration: none
+
+a.orderPrintButton:hover
+  background: $--color-primary
+  color: #fff
+
+a
+    cursor: pointer
+
+body
+    .success
+        color: $--color-success
+    .warning
+        color: $--color-warning
+    .danger
+        color: $--color-danger
+    .info
+        color: $--color-info
+.el-table--striped .el-table__body tr.el-table__row--striped td
+    background: #F0F0F0
+.el-table__row td , .el-table__row td .cell
+    padding: 0!important
+.userPaginate
+    position: absolute
+    top: 45px
+    z-index: 999
+    width: 100%
+    .el-pagination
+        opacity: 1!important
+.sticky 
+    position: fixed
+    top: 0
+    width: 100%
+    background-color: #00000080
+    border-bottom: 1px solid gray
+    padding: 5px 0
+    
+.text-center 
+    text-align: center
